@@ -1,4 +1,14 @@
 turnkey-tools
-=============
+========================
 
-A small application to manage turnkey task
+A small software to easily manage task on turnkeylinux VM
+
+How to install
+-------------------------------------------
+
+...
+
+How to Use
+-------------------------------------------
+
+...
