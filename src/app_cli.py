@@ -17,23 +17,22 @@ def main():
 
     # Declarations of Option Parser : https://docs.python.org/2/library/optparse.html
     parser = OptionParser(version="1.0")
-    group = OptionGroup(parser, "Specific Options", "Your application parameters")
-    group.add_option("-v", "--view", help="Show this software version", action="store_true", dest="view", default=False)
-    group.add_option("-n", "--name", dest="name", help="Set a name")
-    parser.add_option_group(group)
+    parser.add_option("-l", "--list", help="the plugin list", action="store_true", dest="list", default=False)
+    parser.add_option("-a", "--action", help="the action you want to execute", dest="action", default="status")
+    parser.add_option("--verbose", help="show executed commands", action="store_true", dest="debug", default=False)
     (options, args) = parser.parse_args()
 
-    # You're actions
-    if options.view:
-        print "What a great view"
+    # Show the plugin list
+    if options.list:
+        app.show_plugins()
         return True
 
-    # You're actions
-    if options.name:
-        app.set_name(options.name)
+    # Enable the debugging
+    if options.debug:
+        app.enable_debug()
 
     # Calling the main function
-    app.main(args)
+    app.main(options, args)
 
 
 if __name__ == "__main__":

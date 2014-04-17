@@ -47,10 +47,10 @@ setup(
     long_description=long_description,
     entry_points={
         'console_scripts': [
-            'turnkey_tools = src.app_cli:main',
+            'turnkey-tools = src.app_cli:main',
         ],
     },
-    packages=['src', 'src.model'],
+    packages=['src', 'src.model', 'src.plugins'],
     include_package_data=True,
     platforms='any',
     zip_safe=False,
