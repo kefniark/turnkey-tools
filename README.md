@@ -6,7 +6,7 @@ A small software to easily manage task on turnkeylinux VM
 How to install
 -------------------------------------------
 
-To install to your turnkey
+For the moment, to install to your turnkey VM
 
     apt-get install python-setuptools
     easy_install https://github.com/kefniark/turnkey-tools/raw/develop/dist/turnkey_tools-0.0.1-py2.7.egg
