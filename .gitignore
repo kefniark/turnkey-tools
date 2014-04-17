@@ -1,7 +1,6 @@
 # Python
 *.py[cod]
 *.py-e
-dist
 build
 
 # C extensions
@@ -11,7 +10,6 @@ build
 *.mo
 
 # Packages
-*.egg
 *.egg-info
 
 # Unit test / coverage reports
