@@ -18,15 +18,25 @@ At this moment, you will get the '''turnkey-tools''' command
 
     turnkey-tools -h
 
-Functionalities are used as plugin, you can easily enable/disable each turnkey's feature
-To list all plugins
+Functionalities are used as plugin, you can easily enable/disable each turnkey's feature.
+To list all available plugins :
 
     turnkey-tools --list
 
-and for each plugin, you have actions (enable/disable/install/status)
+The Plugins are for the moment :
+    * Webmin
+    * Shell in a box
+    * PhpMyadmin
+    * Monit
+    * Firewall
+
+and for each plugin, you have those actions (enable/disable/install/status)
+So for a new turnkey installation, I suggest you to execute :
 
     turnkey-tools webmin disable
-    turnkey-tools webmin enable
+    turnkey-tools shellinabox disable
+    turnkey-tools firewall enable
+    turnkey-tools monit install
 
 and if you want something simple
 
